@@ -1,29 +1,20 @@
-# AI Developer Performance Analysis 📊
+# 🚀 AI Developer Performance Prediction
 
-## 📌 Project Description
+This project analyzes developer productivity and well-being using Machine Learning.  
+Using metrics like coding hours, bugs, AI usage, sleep, stress and workload, the model predicts:
 
-This project focuses on analyzing the performance of AI developers using data analytics techniques. It studies how factors such as coding hours, AI tool usage, sleep duration, stress levels, and cognitive load influence productivity and task success.
+- ✅ Task Success Rate
+- 😰 Stress Level
+- ❌ Expected Errors
 
-The project applies exploratory data analysis (EDA) to uncover patterns and relationships in the data and prepares the dataset for machine learning applications.
-
----
-
-## 🎯 Objectives
-
-- Understand developer productivity patterns  
-- Identify factors affecting task success  
-- Analyze the impact of AI tools on efficiency  
-- Prepare clean and scaled data for machine learning  
+The goal is to understand how developer behavior affects performance and to help improve productivity and health.
 
 ---
 
-## 🗂 Dataset Overview
+## 📂 Dataset Overview
+The dataset contains **1000 developer records** with the following features:
 
-- Total records: **1000**
-- Total features: **13**
-- No missing values or duplicate records
-
-### Features:
+### 🔹 Input Features
 - Hours_Coding  
 - Lines_of_Code  
 - Bugs_Found  
@@ -31,77 +22,123 @@ The project applies exploratory data analysis (EDA) to uncover patterns and rela
 - AI_Usage_Hours  
 - Sleep_Hours  
 - Cognitive_Load  
-- Task_Success_Rate  
 - Coffee_Intake  
-- Stress_Level  
 - Task_Duration_Hours  
 - Commits  
+
+### 🎯 Prediction Outputs
+- Task_Success_Rate  
+- Stress_Level  
 - Errors  
 
 ---
 
-## 🛠 Technologies Used
+## 🧠 Project Workflow
 
+### ✅ Step 1 — Data Understanding
+- Checked missing data  
+- Verified datatypes  
+- Summary statistics  
+
+---
+
+### 📊 Step 2 — EDA
+- Correlation Heatmap  
+- Relationship Visualizations  
+  - Coding Hours vs Success Rate  
+  - Sleep vs Success Rate  
+  - AI Usage vs Success Rate  
+  - Coffee Intake vs Success  
+
+---
+
+### 🤖 Step 3 — Machine Learning Models
+Multiple regression models were trained and compared:
+
+- Linear Regression  
+- Random Forest Regressor  
+- Gradient Boosting Regressor  
+- XGBoost Regressor  
+
+📌 **Best Models:** Gradient Boosting & XGBoost (Highest R²)
+
+---
+
+## 🏆 Model Evaluation
+Performance measured using:
+
+- MAE  
+- MSE  
+- RMSE  
+- R² Score  
+
+Also included:
+- Comparison Charts  
+- Performance Heatmap  
+
+---
+
+## 🎯 Final Feature — User Prediction System
+A custom prediction pipeline allows the user to enter developer details and predicts:
+
+- Task Success Rate  
+- Stress Level  
+- Expected Errors  
+
+Useful for:
+- Team Leads  
+- Project Managers  
+- Developer Health Monitoring  
+
+---
+
+## 🛠️ Technologies Used
 - Python  
 - Pandas  
 - NumPy  
 - Matplotlib  
 - Seaborn  
-- Scikit-learn  
-- Jupyter Notebook / Google Colab  
+- Scikit-Learn  
+- XGBoost  
 
 ---
 
-## 📈 Project Workflow
+## ▶️ How to Run
+1️⃣ Clone the repo  
+```bash
+git clone <repository_link>
+```
 
-1. Import required libraries  
-2. Load and inspect the dataset  
-3. Perform exploratory data analysis (EDA)  
-4. Generate statistical summaries  
-5. Visualize correlations using heatmaps  
-6. Scale features using MinMaxScaler  
-7. Split data into training and testing sets  
+2️⃣ Install dependencies  
+```bash
+pip install -r requirements.txt
+```
 
----
-
-## 📊 Key Insights
-
-- Balanced coding hours improve task success rates  
-- Higher stress and cognitive load reduce productivity  
-- Adequate sleep positively affects performance  
-- Moderate AI usage enhances efficiency  
-- Increased error rates lower task success  
+3️⃣ Run the notebook or script
 
 ---
 
-## 🎯 Use Cases
-
-- Developer productivity and performance analysis  
-- Data analytics and machine learning portfolio project  
-- HR and workforce performance evaluation  
-- AI-assisted productivity research  
-- Educational project for data science learners  
+## 💡 Key Insights
+- AI usage improves productivity  
+- Sleep strongly reduces stress  
+- High cognitive load decreases performance  
+- Commits indicate structured progress  
 
 ---
 
-## 🔮 Future Enhancements
-
-- Build predictive machine learning models  
-- Perform feature importance analysis  
-- Create interactive dashboards using Streamlit or Power BI  
-- Integrate real-world developer performance datasets  
-- Add time-series analysis for long-term performance tracking  
+## 🚀 Future Enhancements
+- Streamlit Web App  
+- Interactive Dashboard  
+- Model Explainability (SHAP)  
+- API Deployment  
 
 ---
 
-## 👤 Author
-
-**O Nithin Sai Balaji**  
-Aspiring AI / Machine Learning Engineer  
-Skills: Python, Machine Learning, Data Analytics, AWS  
+## 🙌 Contributions
+Contributions are welcome!  
+Feel free to fork, improve, and submit PRs.
 
 ---
 
 ## ⭐ Support
-
-If you found this project helpful, please give it a ⭐ on GitHub!
+If you like this project, please ⭐ star the repository 🙂
